@@ -98,7 +98,7 @@ public class Menu extends MouseAdapter {
 				this.buttons.get(3).createButton(g);
 				
 				g.setFont(fnt2);
-				g.drawString("there are 25 levels; manage your health to survive", 30, 120);
+				g.drawString("there are 28 levels; manage your health to survive", 30, 120);
 				g.drawString("WASD to move around and dodge enemies", 30, 170);
 				g.drawString("levels increment every 250 points", 30, 220);
 				g.drawString("press Space to open shop", 30, 270);

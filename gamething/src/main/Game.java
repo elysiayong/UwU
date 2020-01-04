@@ -189,7 +189,7 @@ public class Game extends Canvas implements Runnable{
 					gameState = STATE.Complete;
 					handler.clearAll();
 					menuEffect();
-				}
+				}	
 				
 			}
 		}
