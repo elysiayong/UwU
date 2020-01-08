@@ -16,8 +16,8 @@ public class AudioPlayer {
 	private static Map<Integer, Music> musicMap = new HashMap<Integer, Music>();
 	
 	public static void load() {
-		File soundFolder = new File("res/sfx");
-		File musicFolder = new File("res/music");
+		File soundFolder = new File("gamething/res/sfx");
+		File musicFolder = new File("gamething/res/music");
 		
 		File[] soundList = soundFolder.listFiles();
 		File[] musicList = musicFolder.listFiles();

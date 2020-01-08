@@ -13,8 +13,8 @@ public class Player extends GameObject{
 
 	Handler handler; 
 	private boolean isInv = false;
-	private final int INVTIME = 10;
-	private int timer = 10;
+	private final int INVTIME = 5;
+	private int timer = 5;
 	private BufferedImage player_image;
 	
 	public Player(int x, int y, ID id, Handler handler) {
@@ -57,7 +57,7 @@ public class Player extends GameObject{
 			float distance = (float) Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2));
 			
 			if(distance <= 50) {
-				if(tempObject.getId() == ID.basicenemy || tempObject.getId() == ID.fastenemy || tempObject.getId() == ID.smallenemy) {
+				if(tempObject.getId() == ID.basicenemy || tempObject.getId() == ID.shootyenemy || tempObject.getId() == ID.wavyenemy || tempObject.getId() == ID.fastenemy || tempObject.getId() == ID.smallenemy) {
 					if(getBounds().intersects((tempObject.getBounds()))) {
 						Game.HEALTH -= 2;	
 						isInv = true;

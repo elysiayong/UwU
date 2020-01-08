@@ -3,9 +3,6 @@ package gameobject;
 import main.ID;
 
 public class ObjectFactory {
-	
-	
-
 	public GameObject create(int xPos, int yPos, int velX, int velY, ID id, int timer, Handler handler) {
 		if(id.equals(ID.basicenemy)) handler.addObject(new Basicenemy(xPos, yPos, id, timer, handler));
 		

@@ -3,19 +3,14 @@ package main;
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Rectangle;
 import java.awt.image.BufferStrategy;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.util.Random;
 
 import gameobject.GameObject;
 import gameobject.Handler;
 import gameobject.KeyInput;
 import gameobject.Player;
-import gameobject.ShootyEnemy;
 import gameobject.SpriteSheet;
-import gameobject.Wavyenemy;
 
 /**
  * 'UwU' is a really small bullet-hell game that utilizes multithreading to render 
@@ -41,7 +36,7 @@ public class Game extends Canvas implements Runnable{
 	private int score = 0;
 	private int level = 1;
 	private int reward = 1000;
-	private int stage = 1;
+	private int stage = 0;
 	public static float HEALTH = 100;
 	
 	//Core classes used to generate the game
@@ -68,7 +63,7 @@ public class Game extends Canvas implements Runnable{
 	public Game() {
 		//Core game variables
 		BuffImageLoader loader = new BuffImageLoader();
-		SPRITESHEET = new SpriteSheet(loader.loadImage("res/spritesheet/spritesheet.png"));
+		SPRITESHEET = new SpriteSheet(loader.loadImage("gamething/res/spritesheet/spritesheet.png"));
 
 		r = new Random();
 		
@@ -185,7 +180,7 @@ public class Game extends Canvas implements Runnable{
 					gameState = STATE.End;
 					handler.clearAll();
 					menuEffect();
-				}else if(stage == 29) {
+				}else if(level == 29) {
 					gameState = STATE.Complete;
 					handler.clearAll();
 					menuEffect();

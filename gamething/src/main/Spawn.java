@@ -26,9 +26,11 @@ public class Spawn {
 		
 		//setting level climb
 		if(Keepscore >= 250) {
+			
 			Keepscore = 0;
 			game.setLevel(game.getLevel() + 1);
 			if(game.getStage() == 0) { 
+
 				if(game.getLevel()%2 == 0 && game.getLevel()%5 != 0 && game.getLevel() <= 10) { 
 					eFac.create(r.nextInt(Game.WIDTH - 32), r.nextInt(Game.HEIGHT - 65), 0, 0, ID.basicenemy, 1200, handler);
 				}
