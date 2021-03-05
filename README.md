@@ -17,8 +17,6 @@ OR
     2) Ensure that lwjgl.jar is able to locate and access the Native Library files in */UwU/gamething/res/native/** (please select the folder associated with your operating system). 
 - Once the above necessary .jar files are set up, you should be able to execute the main Game class. 
 
-// Instructions to launch the game via the Eclipse IDE will come soon.
-
 # License
 MIT License (MIT)
 
